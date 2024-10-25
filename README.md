@@ -1,5 +1,5 @@
 ### Dependencies
-For this .ZSHRC file to work without problems you need to install a few things.
+For the .ZSHRC file to work without problems you need to install a few things.
 ```
 // If you do not have ZSH installed
 sudo apt install zsh
