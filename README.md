@@ -1,7 +1,7 @@
 ### Dependencies
 For the .ZSHRC file to work without problems you need to install a few things.
 ```sh
-// If you do not have ZSH installed
+# If you do not have ZSH installed
 sudo apt install zsh
 ```
 ```sh
@@ -11,7 +11,7 @@ sudo apt install zsh-syntax-highlighting
 sudo apt install zsh-autosuggestions
 ```
 ```sh
-// We install this to get a more colorful "ls" command
+# We install this to get a more colorful "ls" command
 sudo snap install lsd
 ```
 
