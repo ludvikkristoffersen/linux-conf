@@ -1,3 +1,20 @@
+### Dependencies
+For this .ZSHRC file to work without problems you need to install a few things.
+``
+// If you do not have ZSH installed
+sudo apt install zsh
+``
+``
+sudo apt install zsh-syntax-highlighting
+``
+``
+sudo apt install zsh-autosuggestions
+``
+``
+// We install this to get a more colorful "ls" command
+sudo snap install lsd
+``
+
 ### Font and colors
 - **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - **Colors**: [Nightfly color scheme](https://github.com/bluz71/vim-nightfly-colors/tree/master?tab=readme-ov-file#terminal-colors)
