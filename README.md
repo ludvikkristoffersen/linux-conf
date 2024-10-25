@@ -12,7 +12,7 @@ sudo apt install zsh-autosuggestions
 ```
 ```sh
 # We install this to get a more colorful "ls" command
-sudo dpkg -i <latest realese https://github.com/lsd-rs/lsd/releases>
+sudo dpkg -i <latest release https://github.com/lsd-rs/lsd/releases>
 ```
 
 ### Font and colors
