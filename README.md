@@ -1,5 +1,6 @@
 ### Font and colors
 - **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- **Colors**: [Nightfly color scheme](https://github.com/bluz71/vim-nightfly-colors/tree/master?tab=readme-ov-file#terminal-colors)
 
 ### .ZSHRC file
 ```
