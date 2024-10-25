@@ -16,7 +16,7 @@ sudo dpkg -i <latest release https://github.com/lsd-rs/lsd/releases>
 ```
 
 ### Font and colors
-- **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) or [JetBrains Mono Nerd Font (in order to have icons)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip)
 - **Colors**: [Nightfly color scheme](https://github.com/bluz71/vim-nightfly-colors/tree/master?tab=readme-ov-file#terminal-colors)
 
 ### .ZSHRC file
