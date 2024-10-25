@@ -12,7 +12,7 @@ sudo apt install zsh-autosuggestions
 ```
 ```sh
 # We install this to get a more colorful "ls" command
-sudo snap install lsd
+sudo dpkg -i <latest realese https://github.com/lsd-rs/lsd/releases>
 ```
 
 ### Font and colors
@@ -32,7 +32,7 @@ precmd() {
 }
 
 # Setting the prompt including the git branch
-zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}%b%{$reset_color%}(%u)"
+zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}-%b%{$reset_color%}(%u)"
 setopt PROMPT_SUBST
 PROMPT='┌─[$(date +%T)]─%B%F{green}%n%b%f in %B%F{blue}%~%b%f${vcs_info_msg_0_}
 └> '
@@ -93,5 +93,4 @@ alias ip="ip --color=auto"
 # Set directories where commands can be run from without specifying their full paths.
 export PATH=$PATH/bin
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$PATH:/snap/bin
 ```
