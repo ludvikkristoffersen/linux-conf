@@ -1,3 +1,6 @@
+### Font and colors
+- **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+
 ### .ZSHRC file
 ```
 # Autoloads and enables color support in zsh
