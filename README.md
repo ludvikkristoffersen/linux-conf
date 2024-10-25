@@ -1,16 +1,16 @@
 ### Dependencies
 For the .ZSHRC file to work without problems you need to install a few things.
-```
+```sh
 // If you do not have ZSH installed
 sudo apt install zsh
 ```
-```
+```sh
 sudo apt install zsh-syntax-highlighting
 ```
-```
+```sh
 sudo apt install zsh-autosuggestions
 ```
-```
+```sh
 // We install this to get a more colorful "ls" command
 sudo snap install lsd
 ```
@@ -20,7 +20,7 @@ sudo snap install lsd
 - **Colors**: [Nightfly color scheme](https://github.com/bluz71/vim-nightfly-colors/tree/master?tab=readme-ov-file#terminal-colors)
 
 ### .ZSHRC file
-```
+```sh
 # Autoloads and enables color support in zsh
 autoload -U colors && colors
 
