@@ -90,6 +90,7 @@ alias ll="lsd -alh"
 alias grep="grep --color=auto"
 alias dir="dir --color=auto"
 alias ip="ip --color=auto"
+alias cls="clear"
 
 # Set directories where commands can be run from without specifying their full paths.
 export PATH=$PATH/bin
