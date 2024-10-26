@@ -84,6 +84,66 @@ zstyle ":completion:*" use-compctl false
 zstyle ":completion:*" verbose true
 zstyle ":completion:*:kill:*" command "ps -u $USER -o pid,%cpu,tty,cputime,cmd"
 
+# Functions
+# Git help command to print out a more detailed git --help command
+gitHelp() {
+    echo "\e[1;36mGit Command Helper\e[0m\n"
+
+    echo "\e[1;34mSetting Up Git in Your Directory:\e[0m"
+    echo "  \e[0;32m- git config --global user.name \"Your Name\"\e[0m"
+    echo "  \e[0;32m- git config --global user.email \"your.email@example.com\"\e[0m\n"
+
+    echo "\e[1;34mCreating a New Git Repository:\e[0m"
+    echo "  \e[0;32m- git init\e[0m\n"
+
+    echo "\e[1;34mStaging and Committing Changes:\e[0m"
+    echo "  \e[0;32m- git add <file.txt>          # Stage a specific file\e[0m"
+    echo "  \e[0;32m- git add .                  # Stage all modified files\e[0m"
+    echo "  \e[0;32m- git commit -m \"Message\"  # Commit with a message\e[0m"
+    echo "  \e[0;32m- git commit                  # Commit with editor\e[0m\n"
+
+    echo "\e[1;34mChecking Repository Status:\e[0m"
+    echo "  \e[0;32m- git status                  # Show current repo status\e[0m\n"
+
+    echo "\e[1;34mWorking with Branches:\e[0m"
+    echo "  \e[0;32m- git branch                  # List branches\e[0m"
+    echo "  \e[0;32m- git branch <branch-name>    # Create a new branch\e[0m"
+    echo "  \e[0;32m- git checkout <branch-name>  # Switch to a branch\e[0m"
+    echo "  \e[0;32m- git checkout -b <branch-name> # Create and switch to a new branch\e[0m\n"
+
+    echo "\e[1;34mSyncing with Remote Repository:\e[0m"
+    echo "  \e[0;32m- git remote add origin <url>  # Link local repo to remote\e[0m"
+    echo "  \e[0;32m- git push origin <branch>    # Push commits to remote\e[0m"
+    echo "  \e[0;32m- git pull origin <branch>    # Pull changes from remote\e[0m\n"
+
+    echo "\e[1;34mViewing Commit History:\e[0m"
+    echo "  \e[0;32m- git log                     # Show commit history\e[0m"
+    echo "  \e[0;32m- git log --oneline           # Compact commit history\e[0m\n"
+
+    echo "\e[1;34mTemporary Storage with Stash:\e[0m"
+    echo "  \e[0;32m- git stash                   # Save uncommitted changes\e[0m"
+    echo "  \e[0;32m- git stash pop               # Reapply last stashed changes\e[0m"
+    echo "  \e[0;32m- git stash list              # List all stashes\e[0m\n"
+
+    echo "\e[1;34mUndoing and Discarding Changes:\e[0m"
+    echo "  \e[0;32m- git reset --soft <commit>   # Undo commits but keep changes staged\e[0m"
+    echo "  \e[0;32m- git reset --hard <commit>   # Undo commits and discard changes\e[0m"
+    echo "  \e[0;32m- git revert <commit>         # Revert a specific commit\e[0m"
+    echo "  \e[0;32m- git checkout -- <file>      # Discard changes in a specific file\e[0m"
+    echo "  \e[0;32m- git restore <file>          # Restore file to last committed state\e[0m"
+    echo "  \e[0;32m- git restore --staged <file> # Unstage a file without discarding changes\e[0m\n"
+
+    echo "\e[1;34mViewing Differences:\e[0m"
+    echo "  \e[0;32m- git diff                    # Show changes not staged\e[0m"
+    echo "  \e[0;32m- git diff --staged           # Show staged changes\e[0m\n"
+
+    echo "\e[1;34mTagging Important Points:\e[0m"
+    echo "  \e[0;32m- git tag <tag-name>          # Create a new tag\e[0m"
+    echo "  \e[0;32m- git tag                     # List all tags\e[0m\n"
+
+    echo "\e[1;36mHappy Coding!\e[0m 🎉"
+}
+
 # Setting color output for certain commands
 alias ls="lsd"
 alias ll="lsd -alh"
@@ -91,6 +151,7 @@ alias grep="grep --color=auto"
 alias dir="dir --color=auto"
 alias ip="ip --color=auto"
 alias cls="clear"
+alias gith="gitHelp"
 
 # Set directories where commands can be run from without specifying their full paths.
 export PATH=$PATH/bin
