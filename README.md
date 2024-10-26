@@ -32,7 +32,8 @@ precmd() {
 }
 
 # Setting the prompt including the git branch
-zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}-%b%{$reset_color%}(%u)"
+GITBRANCH_ICON="-"
+zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}$GITBRANCH_ICON%b%{$reset_color%}(%u)"
 setopt PROMPT_SUBST
 PROMPT='┌─[$(date +%T)]─%B%F{green}%n%b%f in %B%F{blue}%~%b%f${vcs_info_msg_0_}
 └> '
