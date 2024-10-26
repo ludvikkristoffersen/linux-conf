@@ -140,8 +140,6 @@ gitHelp() {
     echo "\e[1;34mTagging Important Points:\e[0m"
     echo "  \e[0;32m- git tag <tag-name>          # Create a new tag\e[0m"
     echo "  \e[0;32m- git tag                     # List all tags\e[0m\n"
-
-    echo "\e[1;36mHappy Coding!\e[0m 🎉"
 }
 
 # Setting color output for certain commands
