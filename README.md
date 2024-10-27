@@ -33,7 +33,9 @@ precmd() {
 
 # Setting the prompt including the git branch
 GITBRANCH_ICON="-"
-zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}$GITBRANCH_ICON%b%{$reset_color%}(%u)"
+zstyle ':vcs_info:git:*' formats " on %{$fg[yellow]%}$GITBRANCH_ICON%b%{$reset_color%}"
+zstyle ':vcs_info:*' enable git
+
 setopt PROMPT_SUBST
 PROMPT='┌─[$(date +%T)]─%B%F{green}%n%b%f in %B%F{blue}%~%b%f${vcs_info_msg_0_}
 └> '
@@ -139,7 +141,7 @@ gitHelp() {
 
     echo "\e[1;34mTagging Important Points:\e[0m"
     echo "  \e[0;32m- git tag <tag-name>          # Create a new tag\e[0m"
-    echo "  \e[0;32m- git tag                     # List all tags\e[0m\n"
+    echo "  \e[0;32m- git tag                     # List all tags\e[0m\n" 
 }
 
 # Setting color output for certain commands
