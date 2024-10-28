@@ -96,6 +96,8 @@ gitHelp() {
     echo "  \e[0;32m- git config --global user.email \"your.email@example.com\"\e[0m\n"
 
     echo "\e[1;34mCreating a New Git Repository:\e[0m"
+    echo "  \e[0;32m- gh auth login\e[0m\n        # Authenticate to github account, if not already done."
+    echo "  \e[0;32m- gh repo create repo-name --private\e[0m\n # Creates repository." 
     echo "  \e[0;32m- git init\e[0m\n"
 
     echo "\e[1;34mStaging and Committing Changes:\e[0m"
